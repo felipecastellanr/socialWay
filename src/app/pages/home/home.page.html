@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div #map>
+    <ion-searchbar [(ngModel)]="search" (ionChange)="searchChanged()" aria-placeholder="Para onde?"></ion-searchbar>
+
+      <ion-list class="ion-margin-horizontal" [hidden]="!search.length">
+        <ion-item (click)="calcRoute(result)" *ngFor="let result of searchResults">
+          {{ result.description }}
+        </ion-item>
+      </ion-list>
+  </div>
+
+</ion-content>
