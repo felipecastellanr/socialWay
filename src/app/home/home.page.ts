@@ -21,14 +21,11 @@ export class HomePage implements OnInit {
   private googleDirectionsService = new google.maps.DirectionsService();
 
 
-
   constructor(
     private platform: Platform,
     private loadingCtrl: LoadingController,
     private ngZone: NgZone
-  ) {
-  }
-
+  ) {}
 
   ngOnInit() {
     this.mapElement = this.mapElement.nativeElement;
