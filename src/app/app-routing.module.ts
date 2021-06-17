@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'tabs/home',
     pathMatch: 'full'
   },
+  {
+    path: 'historico',
+    loadChildren: () => import('./pages/historico/historico.module').then( m => m.HistoricoPageModule)
+  },
   
 ];
 

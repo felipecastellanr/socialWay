@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { ContaPageRoutingModule } from './conta-routing.module';
 
 import { ContaPage } from './conta.page';
+import { HistoricoPage } from '../historico/historico.page';
 
 @NgModule({
   imports: [
@@ -15,6 +16,7 @@ import { ContaPage } from './conta.page';
     IonicModule,
     ContaPageRoutingModule
   ],
-  declarations: [ContaPage]
+  declarations: [ContaPage, HistoricoPage],
+  entryComponents: [HistoricoPage]
 })
 export class ContaPageModule {}

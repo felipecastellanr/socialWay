@@ -67,7 +67,7 @@ export class HomePage implements OnInit {
 
       this.originMarker = this.map.addMarkerSync({
         title: 'Origem',
-        icon: '#6200ED',
+        icon: '#15D1BE',
         animation: GoogleMapsAnimation.DROP,
         position: myLocation.latLng
       })
