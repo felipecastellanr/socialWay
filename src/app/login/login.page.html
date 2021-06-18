@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-icon class="button_back" routerLink="/login" slot="start" name="arrow-back-outline"></ion-icon>
+    <ion-img src="img/logo.png" class="img_header"></ion-img>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding conteu">
+  <ion-item>
+    <ion-label position="stacked">Login</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked" type="password">Senha</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+<ion-list class="ion-padding">
+  <ion-button expand="block" routerLink="/tabs/home" class="ion-padding">Entrar</ion-button>
+  <h6 class="ou_login">ou</h6>
+  <ion-button expand="block" class="ion-padding" routerLink="/cadastro" >Cadastrar-se</ion-button>
+</ion-list>
+</ion-content>

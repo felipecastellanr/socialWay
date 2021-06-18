@@ -39,3 +39,11 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+.header-ios ion-toolbar:last-of-type{
+    --border-width: 0 0 0 0;
+}
+
+ion-toolbar{
+    height: 51px;
+}
