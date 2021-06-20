@@ -24,6 +24,14 @@ const routes: Routes = [
     path: 'cadastro',
     loadChildren: () => import('./cadastro/cadastro.module').then( m => m.CadastroPageModule)
   },
+  {
+    path: 'comentarios',
+    loadChildren: () => import('./pages/comentarios/comentarios.module').then( m => m.ComentariosPageModule)
+  },
+  {
+    path: 'meusdados',
+    loadChildren: () => import('./pages/meusdados/meusdados.module').then( m => m.MeusdadosPageModule)
+  },
   
 ];
 

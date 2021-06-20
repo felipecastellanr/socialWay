@@ -1,17 +1,16 @@
 <ion-header>
   <ion-toolbar color="secondary">
     <ion-img src="img/logo.png" class="img_header"></ion-img>
+    <ion-icon class="button_login"  routerLink="/login" slot="end" name="log-out-outline"></ion-icon>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <h1></h1>
-
-
-
-
+  <h1>Minha conta</h1>
   <div>
-    <ion-button expands="block" (click)="showModalHistorico()"> show modal historico</ion-button>
+    <ion-button expand="full" (click)="showModalMeusDados()"> Meu dados</ion-button>
+    <ion-button expand="full"> Alterar senha</ion-button>
+    <ion-button expand="full" (click)="showModalHistorico()">Historico</ion-button>
   </div>
 
 </ion-content>

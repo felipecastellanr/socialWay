@@ -1,6 +1,7 @@
 import { Component, NgZone, OnInit, ViewChild } from '@angular/core';
 import { Environment, Geocoder, GoogleMap, GoogleMapOptions, GoogleMaps, GoogleMapsAnimation, GoogleMapsEvent, ILatLng, Marker, MyLocation } from '@ionic-native/google-maps';
 import { LoadingController, Platform } from '@ionic/angular';
+import { VirtualTimeScheduler } from 'rxjs';
 
 declare var google: any;
 
@@ -67,7 +68,7 @@ export class HomePage implements OnInit {
 
       this.originMarker = this.map.addMarkerSync({
         title: 'Origem',
-        icon: '#15D1BE',
+        icon: '#6200ED',
         animation: GoogleMapsAnimation.DROP,
         position: myLocation.latLng
       })
@@ -128,6 +129,16 @@ export class HomePage implements OnInit {
 
     this.map.moveCamera({target:points});
     });
+  }
+
+  async back(){
+    try{
+      await this.map.clear();
+      this.destination = null;
+      this.addOrginMarker();
+    }catch(error){
+      console.error(error);
+    }
   }
 }
 
