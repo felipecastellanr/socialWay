@@ -1,9 +1,34 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>comentarios</ion-title>
+  <ion-toolbar color="secondary">
+    <ion-icon class="button_back" (click)="close()" slot="start" name="arrow-back-outline"></ion-icon>
+    <ion-img src="img/logo.png" class="img_header"></ion-img>
   </ion-toolbar>
 </ion-header>
 
+<h1>Comentarios:</h1>
 <ion-content>
-
-</ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-avatar class="img_foto_comentario"><img src="/img/avatar1.jpg" class="img_icon_comentario">    
+      </ion-avatar>
+      <ion-card-title class="titulo_nome"><strong>Nicolas Santos </strong> </ion-card-title>
+      <ion-card-subtitle class="descricao_comentario">Não gostei, tive muita dificuldade para chegar até o local, sem contar que o estabelecimento não possuia rampas de acesso.</ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-avatar class="img_foto_comentario"><img src="/img/avatar2.jpg" class="img_icon_comentario">    
+      </ion-avatar>
+      <ion-card-title class="titulo_nome"><strong>Vanessa da Silva</strong></ion-card-title>
+      <ion-card-subtitle class="descricao_comentario">Não recomendo, não consegui entrar no bar</ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-avatar class="img_foto_comentario"><img src="/img/avatar3.jpg" class="img_icon_comentario">    
+      </ion-avatar>
+      <ion-card-title class="titulo_nome"><strong>Rafaela Costa Rodrigues</strong></ion-card-title>
+      <ion-card-subtitle class="descricao_comentario">Ruas proximas ao bar horriveis, recomendo só de carro e com acompanhante.</ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
+ </ion-content>
