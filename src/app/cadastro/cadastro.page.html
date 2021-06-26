@@ -5,52 +5,41 @@
   </ion-toolbar>
 </ion-header>
 <h1>Cadastro</h1>
+
 <ion-content>
-  
-  <form class="ion-padding">
-    <ion-item>
-      <ion-label position="floating">Nome</ion-label>
-      <ion-input type="text"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label position="floating">Sobrenome</ion-label>
-      <ion-input type="text"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label position="floating">Idade</ion-label>
-      <ion-input type="number"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label position="floating">Sexo</ion-label>
-      <ion-select placeholder="Selecione">
-        <ion-select-option value="f">Feminino</ion-select-option>
-        <ion-select-option value="m">Masculino</ion-select-option>
-      </ion-select>
-    </ion-item>
-    <ion-item>
-      <ion-label position="floating">portador de deficiencia ?</ion-label>
-      <ion-select placeholder="Selecione">
-        <ion-select-option value="s">Sim</ion-select-option>
-        <ion-select-option value="n">Não</ion-select-option>
-      </ion-select>
-    </ion-item>
+  <ion-item>
+    <ion-label position="floating">Nome</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Sobrenome</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Idade</ion-label>
+    <ion-input type="number"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Sexo</ion-label>
+    <ion-select placeholder="Selecione">
+      <ion-select-option value="f">Feminino</ion-select-option>
+      <ion-select-option value="m">Masculino</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">portador de deficiencia ?</ion-label>
+    <ion-select placeholder="Selecione">
+      <ion-select-option value="s">Sim</ion-select-option>
+      <ion-select-option value="n">Não</ion-select-option>
+    </ion-select>
+  </ion-item>
     <ion-item>
       <ion-label position="floating">E-mail</ion-label>
-      <ion-input type="email"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label position="floating">Confirmar E-mail</ion-label>
-      <ion-input type="email"></ion-input>
+      <ion-input type="email" [(ngModel)]="userRegister.email"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label position="floating">Senha</ion-label>
-      <ion-input type="password"></ion-input>
+      <ion-input type="password" [(ngModel)]="userRegister.password"></ion-input>
     </ion-item>
-    <ion-item>
-      <ion-label position="floating">Confirmar Senha</ion-label>
-      <ion-input type="password"></ion-input>
-    </ion-item>
-    <ion-button expand="block" class="ion-padding" style="margin-top: 20px;">Cadastrar</ion-button>
-  </form>
-
+    <ion-button expand="block" class="ion-padding" style="margin-top: 20px;" (click)="register()">Cadastrar</ion-button>
 </ion-content>

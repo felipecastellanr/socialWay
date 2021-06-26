@@ -8,15 +8,15 @@
 
 <ion-content class="ion-padding conteu">
   <ion-item>
-    <ion-label position="stacked">Login</ion-label>
-    <ion-input></ion-input>
+    <ion-label position="stacked" style="color: #6200ED;">Login</ion-label>
+    <ion-input type="email" placeholder="E-mail" [(ngModel)]="userLogin.email"></ion-input>
   </ion-item>
   <ion-item>
     <ion-label position="stacked">Senha</ion-label>
-    <ion-input type="password"></ion-input>
+    <ion-input type="password" placeholder="senha" [(ngModel)]="userLogin.password"></ion-input>
   </ion-item>
 <ion-list class="ion-padding">
-  <ion-button expand="block" routerLink="/tabs/home" class="ion-padding">Entrar</ion-button>
+  <ion-button expand="block" class="ion-padding" (click)="login()">Entrar</ion-button>
   <h6 class="ou_login">ou</h6>
   <ion-button expand="block" class="ion-padding" routerLink="/cadastro" >Cadastrar-se</ion-button>
 </ion-list>
